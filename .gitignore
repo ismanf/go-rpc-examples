@@ -1,2 +1,3 @@
 client/http_rpc_c/http_rpc_c
 server/http_rpc_s/http_rpc_s
+**/*.exe
