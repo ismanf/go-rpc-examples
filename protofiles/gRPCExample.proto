@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package protofiles;
+
+service AgeChecker {
+    rpc CheckAge(CheckAgeRequest) returns (CheckAgeResponse) {}
+}
+
+message UserData {
+    int32 age = 1;
+    string name = 2;
+}
+
+message CheckAgeRequest {
+    UserData data = 1;
+}
+
+message CheckAgeResponse {
+    string result = 1;
+}
